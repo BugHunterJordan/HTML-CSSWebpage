@@ -1,0 +1,149 @@
+/* 
+   Author:   Jordan Pangrazzi
+   Date:     10/14/25
+ */
+/* Reset margins, padding, and borders for common elements so everything starts from zero */
+article, aside, body, div, footer, header, h1, h2, h3, p {
+   margin: 0;
+   padding: 0;
+   border: 0;
+}
+
+/* Set the base font size for the page */
+html {
+   font-size: 12px;  
+}
+
+/* Overall page styling: background color and font for all text */
+body {
+   background-color: #dee9f9; 
+   font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+/* Events page keep the same background color */
+body.events-page {
+    background-color: #dee9f9; 
+}
+
+/* Container that wraps most of the content: centers it, adds max width, border, and shadow */
+.container {
+   max-width: 780px;
+   border: 2px solid black;
+   box-shadow: 0 10px 6px -6px #777;
+   margin: 0 auto;  
+}
+
+/* Paragraph text size, line height, color */
+p{
+   font-size: 1.2em;
+   line-height: 1.4em;
+   color: white;
+}
+
+/* Main page heading (h1) styling */
+h1 {
+   color: #6B4343;
+   background-color: #FFFFF0;
+   font-size: 4em; 
+   text-shadow: 3px -1px 2px grey;
+}
+
+/* Secondary heading styling */
+h2 {
+   color: orange;
+   font-size: 2em;
+   font-family: "Bree Serif", sans-serif;
+}
+
+/* h1 and h2 shared styling: add padding, center text, and set font family */
+h1, h2 {
+   padding: 0.4em;
+   text-align: center;
+   font-family: 'Calistoga', Cambria, Georgia, serif;
+}
+
+/* Smaller headings (h3) styling and vertical spacing */
+h3 {
+   color: yellow;
+   font-size: 1.5em;
+   padding: 0.9em 0;
+}
+
+/* Site navigation bar: background color, center the links, padding */
+nav.sitenavigation {
+    background-color: #422100;
+    text-align: center; /* centers the links horizontally */
+    padding: 0.5em 0;
+}
+
+/* Links inside navigation bar styling*/
+nav.sitenavigation a {
+    margin: 0 1em;         /* spacing between links */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Navigation hover/focus effect: change link color when hovered or focused */
+nav.sitenavigation a:hover,
+nav.sitenavigation a:focus {
+    color: #ffb6c1;
+}
+
+/* Main content area (article): background color and padding inside the box */
+article {
+   background-color: #425b5f;
+   padding: 3%;
+}
+
+/* Sidebar (aside): rounded corners, width, padding, margin, float to the right, background, shadow */
+aside {
+   border-radius: 25px;
+   width: 38%;
+   padding: 2%;
+   margin: 2%;
+   float: right;
+   background-color: #6e8953;
+   box-shadow: 2px 2px 2px rgb(52,24,15);
+}
+
+/* Events page: make first letter of first paragraph larger */
+body.events-page article p:first-letter {
+    font-size: 1.3em;      /* make first letter bigger */
+    line-height: 1em;      /* spacing of first letter */
+    float: left;           /* drop the letter to the left of the paragraph */
+    margin-right: 0.1em;   /* small space between letter and text */
+}
+
+/* Footer styling: padding, text color, background color, center text, clear floats */
+footer {
+   padding: 0.6em;
+   color: #6B4343;
+   background-color: ivory;
+   text-align: center;
+   clear: both;
+}
+
+/* Paragraphs inside footer: small margin and color */
+footer p {
+   margin: 0.4em;
+   color: #6B4343;
+}
+
+/* Accent class for text that should be bold and underlined */
+.accent {
+   font-weight: bold;
+   text-decoration: underline;
+}
+
+/* Print styling: override colors and remove shadows for printing */
+@media print{
+   body, h1, h2, h3, article, aside, footer {
+      color: #000;  
+      background-color: #fff;   
+      box-shadow: none;
+   }
+   @page {
+       margin: 1in;
+   }
+}
