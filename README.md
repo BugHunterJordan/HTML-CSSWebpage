@@ -10,3 +10,5 @@ Semantic HTML: Proper use of tags for accessibility and structure.
 Consistent Styling: Maintains design consistency using CSS.
 Error Handling: Checked for broken links and missing resources.
 Code Quality: Clean, well-commented HTML/CSS for maintainability.
+
+Source code and page images are viewable in the files above
